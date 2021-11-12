@@ -8,7 +8,7 @@ class Hash
   #   user.birthdate # => NoMethodError: undefined method `birthdate' for <struct...>
   #
   def to_struct
-    Struct.new(*keys).new(*values)
+    Struct.new(*keys.map(&:to_sym)).new(*values)
   end
 
   # Returns a new struct with the same key/value pairs
@@ -18,7 +18,7 @@ class Hash
   #
   def to_deep_struct
     Struct
-      .new(*keys)
+      .new(*keys.map(&:to_sym))
       .new(
         *values.map do |value|
           value.respond_to?(:to_deep_struct) ? value.to_deep_struct : value
