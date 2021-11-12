@@ -5,13 +5,15 @@ Adds `#to_struct` and `#to_deep_struct` to Hash and Array
 ### Install
 
 ```bash
-gem install dorian-each
+gem install dorian-to_struct
 ```
 
-Or as part of my other gems:
+Then: `require "dorian/to_struct"`
 
-```bash
-gem install dorian
+Or in your `Gemfile`:
+
+```
+gem "dorian-to_struct"
 ```
 
 ### Usage
