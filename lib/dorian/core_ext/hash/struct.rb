@@ -17,12 +17,10 @@ class Hash
   #   user.events.first.name # => "Party"
   #
   def to_deep_struct
-    Struct
-      .new(*keys.map(&:to_sym))
-      .new(
-        *values.map do |value|
-          value.respond_to?(:to_deep_struct) ? value.to_deep_struct : value
-        end
-      )
+    Struct.new(*keys.map(&:to_sym)).new(
+      *values.map do |value|
+        value.respond_to?(:to_deep_struct) ? value.to_deep_struct : value
+      end
+    )
   end
 end
