@@ -1,0 +1,21 @@
+PATH
+  remote: .
+  specs:
+    dorian-to_struct (0.2.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  arm64-darwin-23
+  ruby
+
+DEPENDENCIES
+  dorian-to_struct!
+
+RUBY VERSION
+   ruby 3.3.0p0
+
+BUNDLED WITH
+   2.5.5
