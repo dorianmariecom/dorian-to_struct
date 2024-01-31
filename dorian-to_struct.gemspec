@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 Gem::Specification.new do |s|
   s.name = "dorian-to_struct"
   s.version = "0.2.0"
   s.summary = "Adds `#to_struct` and `#to_deep_struct` to Hash and Array"
   s.description =
-    s.summary + "\n\n" + "e.g. user.first_name, user.events.first.name, etc."
+    "#{s.summary}\n\ne.g. user.first_name, user.events.first.name, etc."
   s.authors = ["Dorian Marié"]
   s.email = "dorian@dorianmarie.fr"
   s.files = %w[
