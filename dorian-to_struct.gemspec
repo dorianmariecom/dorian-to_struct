@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
     lib/dorian/core_ext/hash/struct.rb
     lib/dorian/core_ext/array/struct.rb
   ]
-  s.homepage = "https://github.com/dorianmariefr/to_struct"
+  s.homepage = "https://github.com/dorianmariecom/to_struct"
   s.license = "MIT"
   s.metadata = { "rubygems_mfa_required" => "true" }
 end
