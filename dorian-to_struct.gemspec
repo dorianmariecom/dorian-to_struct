@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = "dorian-to_struct"
-  s.version = "0.3.1"
+  s.version = "0.3.2"
   s.summary = "Adds `#to_struct` and `#to_deep_struct` to Hash and Array"
   s.description =
     "#{s.summary}\n\ne.g. user.first_name, user.events.first.name, etc."
@@ -12,4 +12,6 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/dorianmariecom/dorian-to_struct"
   s.license = "MIT"
   s.metadata = { "rubygems_mfa_required" => "true" }
+
+  s.required_ruby_version = ">= 3.3.0"
 end
