@@ -3,9 +3,8 @@
 Gem::Specification.new do |s|
   s.name = "dorian-to_struct"
   s.version = "0.4.1"
-  s.summary = "Adds `#to_struct` and `#to_deep_struct` to Hash and Array"
-  s.description =
-    "#{s.summary}\n\ne.g. user.first_name, user.events.first.name, etc."
+  s.summary = "makes structs"
+  s.description = s.summary
   s.authors = ["Dorian Marié"]
   s.email = "dorian@dorianmarie.com"
   s.files = ["lib/dorian-to_struct.rb"]
