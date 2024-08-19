@@ -7,8 +7,9 @@ Gem::Specification.new do |s|
   s.description = s.summary
   s.authors = ["Dorian Marié"]
   s.email = "dorian@dorianmarie.com"
-  s.files = ["lib/dorian-to_struct.rb", "lib/dorian/to_struct.rb"]
+  s.files = %w[lib/dorian-to_struct.rb lib/dorian/to_struct.rb]
   s.homepage = "https://github.com/dorianmariecom/dorian-to_struct"
   s.license = "MIT"
   s.metadata = { "rubygems_mfa_required" => "true" }
+  s.add_dependency "dorian-arguments"
 end
