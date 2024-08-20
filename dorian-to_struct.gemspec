@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = "dorian-to_struct"
-  s.version = "0.5.0"
+  s.version = File.read("VERSION").strip
   s.summary = "makes structs"
   s.description = s.summary
   s.authors = ["Dorian Marié"]
