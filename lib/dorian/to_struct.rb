@@ -10,19 +10,11 @@ end
 
 class Hash
   def to_struct
-    Struct.new(
-      *keys.map(&:to_sym)
-    ).new(
-      *values
-    )
+    Struct.new(*keys.map(&:to_sym)).new(*values)
   end
 
   def to_deep_struct
-    Struct.new(
-      *keys.map(&:to_sym)
-    ).new(
-      *values.map(&:to_deep_struct)
-    )
+    Struct.new(*keys.map(&:to_sym)).new(*values.map(&:to_deep_struct))
   end
 end
 
