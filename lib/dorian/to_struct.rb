@@ -3,8 +3,26 @@ class Array
     map(&:to_struct)
   end
 
+  def from_struct
+    map(&:from_struct)
+  end
+
   def to_deep_struct
     map(&:to_deep_struct)
+  end
+
+  def from_deep_struct
+    map(&:from_deep_struct)
+  end
+end
+
+class Struct
+  def from_struct
+    to_h
+  end
+
+  def from_deep_struct
+    to_h { |key, value| [key, value.from_deep_struct] }
   end
 end
 
@@ -24,6 +42,14 @@ class Object
   end
 
   def to_deep_struct
+    self
+  end
+
+  def from_struct
+    self
+  end
+
+  def from_deep_struct
     self
   end
 end
