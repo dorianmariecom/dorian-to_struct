@@ -27,7 +27,7 @@ RSpec.describe "to_struct" do
     end
   end
 
-  describe "@to_deep_struct" do
+  describe "#to_deep_struct" do
     it "works" do
       expect(DEEP_STRUCT.first_name).to eq("Dorian")
       expect(DEEP_STRUCT.last_name).to eq("Marié")
