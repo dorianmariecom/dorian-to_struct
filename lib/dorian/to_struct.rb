@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Array
   def to_struct
     map(&:to_struct)
@@ -22,7 +24,7 @@ class Struct
   end
 
   def from_deep_struct
-    to_h { |key, value| [key, value.from_deep_struct] }
+    transform_values(&:from_deep_struct)
   end
 end
 

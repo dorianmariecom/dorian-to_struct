@@ -33,7 +33,7 @@ RSpec.describe "to_struct" do
       expect(DEEP_STRUCT.first_name).to eq("Dorian")
       expect(DEEP_STRUCT.last_name).to eq("Marié")
       expect(DEEP_STRUCT.events.first.name).to eq("Party!")
-      expect(DEEP_STRUCT.from_struct).to_not eq(HASH)
+      expect(DEEP_STRUCT.from_struct).not_to eq(HASH)
       expect(DEEP_STRUCT.from_deep_struct).to eq(HASH)
     end
 
