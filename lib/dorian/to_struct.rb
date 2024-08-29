@@ -24,7 +24,7 @@ class Struct
   end
 
   def from_deep_struct
-    transform_values(&:from_deep_struct)
+    to_h.transform_values(&:from_deep_struct)
   end
 end
 
