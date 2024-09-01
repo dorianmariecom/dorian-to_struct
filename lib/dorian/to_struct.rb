@@ -20,11 +20,11 @@ end
 
 class Struct
   def from_struct
-    to_h
+    to_h.transform_keys(&:to_s)
   end
 
   def from_deep_struct
-    to_h.transform_values(&:from_deep_struct)
+    to_h.transform_keys(&:to_s).transform_values(&:from_deep_struct)
   end
 end
 
