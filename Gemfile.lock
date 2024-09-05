@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    dorian-to_struct (2.0.0)
+    dorian-to_struct (2.0.1)
 
 GEM
   remote: https://rubygems.org/
@@ -110,7 +110,7 @@ DEPENDENCIES
   rubocop-rspec_rails
 
 RUBY VERSION
-   ruby 3.3.4p94
+   ruby 3.3.5p100
 
 BUNDLED WITH
    2.5.18
