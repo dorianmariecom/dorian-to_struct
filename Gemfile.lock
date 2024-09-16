@@ -30,7 +30,7 @@ GEM
     connection_pool (2.4.1)
     csv (3.3.0)
     diff-lcs (1.5.1)
-    dorian (2.5.1)
+    dorian (2.6.0)
       csv
       dorian-arguments
       dorian-eval
@@ -169,7 +169,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler-audit
-  dorian (~> 2.5)
+  dorian
   dorian-to_struct!
   rspec
   rubocop-capybara
