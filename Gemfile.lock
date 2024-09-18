@@ -30,7 +30,7 @@ GEM
     connection_pool (2.4.1)
     csv (3.3.0)
     diff-lcs (1.5.1)
-    dorian (2.6.2)
+    dorian (2.6.3)
       csv
       dorian-arguments
       dorian-eval
@@ -184,4 +184,4 @@ RUBY VERSION
    ruby 3.3.5p100
 
 BUNDLED WITH
-   2.5.18
+   2.5.19
