@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    dorian-to_struct (2.0.2)
+    dorian-to_struct (2.0.3)
 
 GEM
   remote: https://rubygems.org/
