@@ -50,12 +50,12 @@ GEM
       terminal-table
       w_syntax_tree-erb
       yaml
-    dorian-arguments (1.2.2)
-      bigdecimal
-    dorian-eval (1.5.0)
-      yaml
-    dorian-progress (1.1.2)
-      ruby-progressbar
+    dorian-arguments (1.2.3)
+      bigdecimal (>= 3.1, < 5)
+    dorian-eval (1.5.1)
+      yaml (>= 0.3, < 1)
+    dorian-progress (1.1.3)
+      ruby-progressbar (>= 1.13, < 2)
     drb (2.2.3)
     geom2d (0.4.1)
     git (4.3.2)
@@ -204,7 +204,7 @@ DEPENDENCIES
   rubocop-rspec_rails
 
 RUBY VERSION
-   ruby 3.4.5p51
+  ruby 4.0.5
 
 BUNDLED WITH
-   2.7.2
+  4.0.15

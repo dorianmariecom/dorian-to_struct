@@ -1,39 +1,39 @@
 # `dorian-to_struct`
 
-Adds `#to_struct` and `#to_deep_struct` to Hash and Array
+Convert Ruby hashes and arrays into struct-like objects.
 
-### Install
+## Install
 
 ```bash
 gem install dorian-to_struct
 ```
 
-Then: `require "dorian/to_struct"`
+Also included in the aggregate gem:
 
-Or in your `Gemfile`:
-
-```
-gem "dorian-to_struct"
+```bash
+gem install dorian
 ```
 
-### Usage
+## Usage
 
+```bash
+to_struct -h
 ```
-user = {
-  first_name: "Dorian",
-  last_name: "Marié"
-}.to_struct
 
-user.first_name # => "Dorian"
-user.last_name # => "Marié"
-user.birtdate # NoMethodError
+Run `to_struct -h` for generated option details and `to_struct -v` for the installed version.
 
-event = {
-  name: "Party",
-  organizer: {
-    first_name: "Dorian"
-  }
-}.to_deep_struct
+## Notes
 
-event.organizer.first_name # => "Dorian"
+- The executable only exposes help/version. The useful API is loaded with `require "dorian/to_struct"`.
+
+## Examples
+
+### Access hash keys as methods
+
+```ruby
+require "dorian/to_struct"
+
+user = { "name" => "Dorian" }.to_struct
+user.name # => "Dorian"
+user.from_struct # => { "name" => "Dorian" }
 ```
