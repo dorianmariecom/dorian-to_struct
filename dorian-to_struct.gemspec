@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.name = "dorian-to_struct"
   s.version = File.read("VERSION").strip
   s.summary = "makes structs"
-  s.description = s.summary
+  s.description = "Converts nested Ruby hashes and arrays into struct-like objects."
   s.authors = ["Dorian Marié"]
   s.email = "dorian@dorianmarie.com"
   s.files = %w[

@@ -114,6 +114,8 @@ Style/MultilineBlockChain:
   Enabled: false
 Style/NestedTernaryOperator:
   Enabled: false
+Style/OneClassPerFile:
+  Enabled: false
 Style/QuotedSymbols:
   Enabled: false
 Style/StringLiterals:
